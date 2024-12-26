@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on johndoe</title>
+    <title>Tags on Blog-Nguyễn Cường</title>
     <link>http://www.example.com/tags/</link>
-    <description>Recent content in Tags on johndoe</description>
+    <description>Recent content in Tags on Blog-Nguyễn Cường</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Async Await</title>
+      <link>http://www.example.com/tags/async-await/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/async-await/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Asynchronous Programming</title>
+      <link>http://www.example.com/tags/asynchronous-programming/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/asynchronous-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Document Object Model</title>
+      <link>http://www.example.com/tags/document-object-model/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/document-object-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DOM</title>
+      <link>http://www.example.com/tags/dom/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/dom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Front-End Development</title>
+      <link>http://www.example.com/tags/front-end-development/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/front-end-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>http://www.example.com/tags/javascript/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Promises</title>
+      <link>http://www.example.com/tags/promises/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/promises/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Development</title>
+      <link>http://www.example.com/tags/web-development/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/web-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event Handling</title>
+      <link>http://www.example.com/tags/event-handling/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/event-handling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Object-Oriented</title>
+      <link>http://www.example.com/tags/object-oriented/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/object-oriented/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oop</title>
+      <link>http://www.example.com/tags/oop/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://www.example.com/tags/programming/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/programming/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Css</title>
       <link>http://www.example.com/tags/css/</link>
@@ -41,6 +125,62 @@
       <link>http://www.example.com/tags/shortcodes/</link>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://www.example.com/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basics</title>
+      <link>http://www.example.com/tags/basics/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/basics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginner</title>
+      <link>http://www.example.com/tags/beginner/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/beginner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coding</title>
+      <link>http://www.example.com/tags/coding/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collections</title>
+      <link>http://www.example.com/tags/collections/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/collections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Framework</title>
+      <link>http://www.example.com/tags/framework/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>http://www.example.com/tags/java/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syntax</title>
+      <link>http://www.example.com/tags/syntax/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/syntax/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorials</title>
+      <link>http://www.example.com/tags/tutorials/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/tags/tutorials/</guid>
       <description></description>
     </item>
     <item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java Nâng Cao on Blog-Nguyễn Cường</title>
+    <link>http://www.example.com/categories/java-n%C3%A2ng-cao/</link>
+    <description>Recent content in Java Nâng Cao on Blog-Nguyễn Cường</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.example.com/categories/java-n%C3%A2ng-cao/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Collections Framework</title>
+      <link>http://www.example.com/java/5/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/java/5/</guid>
+      <description>&lt;h1 id=&#34;java-collections-framework&#34;&gt;&#xD;&#xA;  Java Collections Framework&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-collections-framework&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Java Collections Framework (JCF) là một bộ các lớp và giao diện được cung cấp trong Java để làm việc với các nhóm đối tượng. Nó cung cấp một cách tiếp cận thống nhất để lưu trữ và xử lý dữ liệu, giúp lập trình viên dễ dàng thao tác với các tập hợp đối tượng.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-các-thành-phần-chính-trong-collections-framework&#34;&gt;&#xD;&#xA;  1. Các thành phần chính trong Collections Framework&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-c%c3%a1c-th%c3%a0nh-ph%e1%ba%a7n-ch%c3%adnh-trong-collections-framework&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Java Collections Framework bao gồm các thành phần chính sau:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

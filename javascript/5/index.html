@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  JavaScript DOM (Document Object Model) · Blog-Nguyễn Cường
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Nguyễn Bá Cường">
+<meta name="description" content="Khám phá về DOM trong JavaScript. Hướng dẫn cách tương tác với các phần tử trên trang web bằng cách sử dụng JavaScript.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JavaScript DOM (Document Object Model)">
+  <meta name="twitter:description" content="Khám phá về DOM trong JavaScript. Hướng dẫn cách tương tác với các phần tử trên trang web bằng cách sử dụng JavaScript.">
+
+<meta property="og:url" content="http://www.example.com/javascript/5/">
+  <meta property="og:site_name" content="Blog-Nguyễn Cường">
+  <meta property="og:title" content="JavaScript DOM (Document Object Model)">
+  <meta property="og:description" content="Khám phá về DOM trong JavaScript. Hướng dẫn cách tương tác với các phần tử trên trang web bằng cách sử dụng JavaScript.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="javascript">
+    <meta property="article:published_time" content="2023-08-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-08-12T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="DOM">
+    <meta property="article:tag" content="Web Development">
+    <meta property="article:tag" content="Document Object Model">
+    <meta property="article:tag" content="Front-End Development">
+      <meta property="og:see_also" content="http://www.example.com/javascript/4/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/2/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/3/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/1/">
+
+
+
+
+<link rel="canonical" href="http://www.example.com/javascript/5/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://www.example.com/">
+      Blog-Nguyễn Cường
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/java/">Java</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/javascript/">Java Script</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/javascript/5/">
+          JavaScript DOM (Document Object Model)
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="javascript-dom-document-object-model">
+  JavaScript DOM (Document Object Model)
+  <a class="heading-link" href="#javascript-dom-document-object-model">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><strong>DOM (Document Object Model)</strong> là một khái niệm quan trọng trong phát triển web. Nó cung cấp một cách để JavaScript có thể truy cập và thay đổi nội dung, cấu trúc và kiểu dáng của các tài liệu HTML hoặc XML. Khi bạn làm việc với các trang web, bạn sẽ thường xuyên cần sử dụng DOM để thay đổi các phần tử trên trang mà không cần phải tải lại toàn bộ trang.</p>
+<h2 id="1-dom-là-gì">
+  1. DOM là Gì?
+  <a class="heading-link" href="#1-dom-l%c3%a0-g%c3%ac">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>DOM là một biểu diễn cấu trúc cây của tài liệu HTML hoặc XML. Mỗi phần tử trong tài liệu được xem như là một nút trong cây DOM. DOM giúp JavaScript truy cập và thay đổi các phần tử HTML, thuộc tính và nội dung của chúng một cách động.</p>
+<h3 id="cấu-trúc-dom">
+  Cấu Trúc DOM
+  <a class="heading-link" href="#c%e1%ba%a5u-tr%c3%bac-dom">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Cấu trúc của DOM giống như một cây, trong đó mỗi phần tử trong HTML trở thành một nút (node). Ví dụ, khi bạn có một tài liệu HTML như sau:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Trang web của tôi<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Chào mừng đến với trang web của tôi!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Đây là một đoạn văn bản.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Cấu trúc DOM của nó sẽ như sau:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">Sao</span> <span class="nt">chép</span> <span class="nt">mã</span>
+</span></span><span class="line"><span class="cl"><span class="nt">Document</span>
+</span></span><span class="line"><span class="cl"> <span class="err">├──</span> <span class="nt">html</span>
+</span></span><span class="line"><span class="cl"> <span class="err">│</span>    <span class="err">├──</span> <span class="nt">head</span>
+</span></span><span class="line"><span class="cl"> <span class="err">│</span>    <span class="err">│</span>    <span class="err">└──</span> <span class="nt">title</span>
+</span></span><span class="line"><span class="cl"> <span class="err">│</span>    <span class="err">└──</span> <span class="nt">body</span>
+</span></span><span class="line"><span class="cl"> <span class="err">│</span>         <span class="err">├──</span> <span class="nt">h1</span>
+</span></span><span class="line"><span class="cl"> <span class="err">│</span>         <span class="err">└──</span> <span class="nt">p</span>
+</span></span></code></pre></div><p>Mỗi thẻ HTML (như <!-- raw HTML omitted -->, <!-- raw HTML omitted -->, <!-- raw HTML omitted -->) và nội dung bên trong chúng trở thành các phần tử (elements) trong cây DOM.</p>
+<h2 id="2-truy-cập-và-thao-tác-với-dom">
+  2. Truy Cập và Thao Tác Với DOM
+  <a class="heading-link" href="#2-truy-c%e1%ba%adp-v%c3%a0-thao-t%c3%a1c-v%e1%bb%9bi-dom">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript cung cấp nhiều phương thức để truy cập và thay đổi các phần tử DOM. Dưới đây là một số cách phổ biến để làm việc với DOM.</p>
+<h3 id="21-lấy-phần-tử-dom">
+  2.1. Lấy Phần Tử DOM
+  <a class="heading-link" href="#21-l%e1%ba%a5y-ph%e1%ba%a7n-t%e1%bb%ad-dom">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Để truy cập phần tử trong DOM, bạn có thể sử dụng một số phương thức như getElementById(), getElementsByClassName(), getElementsByTagName(), hoặc querySelector().</p>
+<p>getElementById()
+Trả về phần tử có id cụ thể.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">header</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;header&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">header</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">getElementsByClassName</span><span class="p">()</span>
+</span></span></code></pre></div><p>Trả về một danh sách các phần tử có cùng lớp (class).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">paragraphs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s2">&#34;text&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paragraphs</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">querySelector</span><span class="p">()</span> <span class="nx">và</span> <span class="nx">querySelectorAll</span><span class="p">()</span>
+</span></span></code></pre></div><p>Trả về phần tử đầu tiên phù hợp với CSS selector hoặc tất cả các phần tử phù hợp.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">firstParagraph</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">allParagraphs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><h2 id="22-thay-đổi-nội-dung-và-thuộc-tính">
+  2.2. Thay Đổi Nội Dung và Thuộc Tính
+  <a class="heading-link" href="#22-thay-%c4%91%e1%bb%95i-n%e1%bb%99i-dung-v%c3%a0-thu%e1%bb%99c-t%c3%adnh">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Khi bạn đã truy cập được phần tử DOM, bạn có thể thay đổi nội dung của nó, thay đổi các thuộc tính, hoặc thậm chí thay đổi các sự kiện.</p>
+<p>Thay Đổi Nội Dung
+Sử dụng thuộc tính innerHTML hoặc textContent để thay đổi nội dung của phần tử.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">header</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;header&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">header</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&#34;Chào mừng đến với trang web mới!&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>Thay Đổi Thuộc Tính
+Để thay đổi thuộc tính của một phần tử, bạn có thể sử dụng setAttribute().</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">image</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;image&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">image</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&#34;src&#34;</span><span class="p">,</span> <span class="s2">&#34;new-image.jpg&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Hoặc bạn có thể thay đổi thuộc tính trực tiếp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myButton&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">button</span><span class="p">.</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span></code></pre></div><p>Thêm hoặc Xóa Lớp (Class)
+Để thêm hoặc xóa lớp cho phần tử, bạn có thể sử dụng classList.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;element&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">element</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&#34;new-class&#34;</span><span class="p">);</span>  <span class="c1">// Thêm lớp
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">element</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s2">&#34;old-class&#34;</span><span class="p">);</span>  <span class="c1">// Xóa lớp
+</span></span></span></code></pre></div><h3 id="23-thêm-và-xóa-phần-tử">
+  2.3. Thêm và Xóa Phần Tử
+  <a class="heading-link" href="#23-th%c3%aam-v%c3%a0-x%c3%b3a-ph%e1%ba%a7n-t%e1%bb%ad">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Bạn có thể tạo phần tử mới và thêm vào DOM, hoặc xóa phần tử khỏi DOM.</p>
+<p>Thêm Phần Tử</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">newParagraph</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">newParagraph</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&#34;Đây là đoạn văn bản mới!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newParagraph</span><span class="p">);</span>
+</span></span></code></pre></div><p>Xóa Phần Tử</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">paragraph</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;removeParagraph&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">paragraph</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>
+</span></span></code></pre></div><h2 id="3-xử-lý-sự-kiện-dom">
+  3. Xử Lý Sự Kiện DOM
+  <a class="heading-link" href="#3-x%e1%bb%ad-l%c3%bd-s%e1%bb%b1-ki%e1%bb%87n-dom">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>DOM cho phép bạn thêm các sự kiện vào các phần tử HTML. Một sự kiện có thể là một hành động của người dùng, như nhấn chuột, di chuyển chuột, hoặc nhấn phím.</p>
+<h3 id="31-thêm-sự-kiện">
+  3.1. Thêm Sự Kiện
+  <a class="heading-link" href="#31-th%c3%aam-s%e1%bb%b1-ki%e1%bb%87n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Để thêm sự kiện vào phần tử, bạn sử dụng phương thức addEventListener().</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myButton&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Button clicked!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h3 id="32-loại-bỏ-sự-kiện">
+  3.2. Loại Bỏ Sự Kiện
+  <a class="heading-link" href="#32-lo%e1%ba%a1i-b%e1%bb%8f-s%e1%bb%b1-ki%e1%bb%87n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Bạn có thể loại bỏ sự kiện bằng phương thức removeEventListener().</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myButton&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">handleClick</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Button clicked!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="nx">handleClick</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Loại bỏ sự kiện
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">button</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="p">,</span> <span class="nx">handleClick</span><span class="p">);</span>
+</span></span></code></pre></div><h2 id="4-ví-dụ-ứng-dụng">
+  4. Ví Dụ Ứng Dụng
+  <a class="heading-link" href="#4-v%c3%ad-d%e1%bb%a5-%e1%bb%a9ng-d%e1%bb%a5ng">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Dưới đây là một ví dụ đơn giản về cách sử dụng DOM để thay đổi nội dung và xử lý sự kiện:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Sao chép mã
+</span></span><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;vi&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>DOM Example<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">function</span> <span class="nx">changeContent</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;myText&#34;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&#34;Chào mừng bạn đến với JavaScript!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myText&#34;</span><span class="p">&gt;</span>Đây là tiêu đề ban đầu<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;changeContent()&#34;</span><span class="p">&gt;</span>Thay đổi nội dung<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Khi người dùng nhấn nút &ldquo;Thay đổi nội dung&rdquo;, nội dung của phần tử <!-- raw HTML omitted --> sẽ thay đổi thành &ldquo;Chào mừng bạn đến với JavaScript!&rdquo;.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Nguyễn Bá Cường 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

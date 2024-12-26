@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await · Blog-Nguyễn Cường
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Nguyễn Bá Cường">
+<meta name="description" content="Khám phá cách lập trình bất đồng bộ trong JavaScript với Promises và async/await. Hướng dẫn sử dụng các công cụ này để xử lý tác vụ bất đồng bộ hiệu quả.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await">
+  <meta name="twitter:description" content="Khám phá cách lập trình bất đồng bộ trong JavaScript với Promises và async/await. Hướng dẫn sử dụng các công cụ này để xử lý tác vụ bất đồng bộ hiệu quả.">
+
+<meta property="og:url" content="http://www.example.com/javascript/4/">
+  <meta property="og:site_name" content="Blog-Nguyễn Cường">
+  <meta property="og:title" content="Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await">
+  <meta property="og:description" content="Khám phá cách lập trình bất đồng bộ trong JavaScript với Promises và async/await. Hướng dẫn sử dụng các công cụ này để xử lý tác vụ bất đồng bộ hiệu quả.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="javascript">
+    <meta property="article:published_time" content="2023-08-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-08-12T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Asynchronous Programming">
+    <meta property="article:tag" content="Promises">
+    <meta property="article:tag" content="Async Await">
+    <meta property="article:tag" content="Web Development">
+      <meta property="og:see_also" content="http://www.example.com/javascript/5/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/2/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/3/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/1/">
+
+
+
+
+<link rel="canonical" href="http://www.example.com/javascript/4/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://www.example.com/">
+      Blog-Nguyễn Cường
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/java/">Java</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/javascript/">Java Script</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/javascript/4/">
+          Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="lập-trình-bất-đồng-bộ-asynchronous-programming-trong-javascript-promises-và-asyncawait">
+  Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await
+  <a class="heading-link" href="#l%e1%ba%adp-tr%c3%acnh-b%e1%ba%a5t-%c4%91%e1%bb%93ng-b%e1%bb%99-asynchronous-programming-trong-javascript-promises-v%c3%a0-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Trong phát triển web hiện đại, việc xử lý các tác vụ bất đồng bộ là rất quan trọng, đặc biệt khi làm việc với các API, truy vấn cơ sở dữ liệu, hoặc các tác vụ yêu cầu thời gian như tải dữ liệu từ máy chủ. JavaScript cung cấp các công cụ mạnh mẽ để làm việc với các tác vụ bất đồng bộ, trong đó Promises và async/await là hai công cụ phổ biến nhất.</p>
+<p>Trong bài viết này, chúng ta sẽ tìm hiểu về Promises và async/await, cách sử dụng chúng để xử lý tác vụ bất đồng bộ một cách dễ dàng và hiệu quả.</p>
+<h2 id="1-promises-trong-javascript">
+  1. Promises trong JavaScript
+  <a class="heading-link" href="#1-promises-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="11-promises-là-gì">
+  1.1. Promises Là Gì?
+  <a class="heading-link" href="#11-promises-l%c3%a0-g%c3%ac">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Promise là một đối tượng đại diện cho kết quả của một tác vụ bất đồng bộ. Promise có thể có một trong ba trạng thái:</p>
+<ul>
+<li><strong>Pending (Chờ đợi)</strong>: Tác vụ bất đồng bộ chưa hoàn thành.</li>
+<li><strong>Fulfilled (Hoàn thành)</strong>: Tác vụ bất đồng bộ đã hoàn thành thành công.</li>
+<li><strong>Rejected (Từ chối)</strong>: Tác vụ bất đồng bộ đã hoàn thành nhưng thất bại.</li>
+</ul>
+<h3 id="12-tạo-và-sử-dụng-promise">
+  1.2. Tạo và Sử Dụng Promise
+  <a class="heading-link" href="#12-t%e1%ba%a1o-v%c3%a0-s%e1%bb%ad-d%e1%bb%a5ng-promise">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Để tạo một Promise trong JavaScript, bạn sử dụng từ khóa <code>new Promise</code>. Promise nhận vào một hàm callback có hai tham số: <code>resolve</code> và <code>reject</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">success</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// Giả lập một tác vụ bất đồng bộ
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Tác vụ thành công!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">reject</span><span class="p">(</span><span class="s2">&#34;Tác vụ thất bại.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// Nếu thành công
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span> <span class="c1">// Nếu thất bại
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">});</span>
+</span></span></code></pre></div><h2 id="13-ví-dụ-về-promise-với-tác-vụ-bất-đồng-bộ">
+  1.3. Ví Dụ về Promise với Tác Vụ Bất Đồng Bộ
+  <a class="heading-link" href="#13-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-promise-v%e1%bb%9bi-t%c3%a1c-v%e1%bb%a5-b%e1%ba%a5t-%c4%91%e1%bb%93ng-b%e1%bb%99">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">let</span> <span class="nx">success</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// Giả lập một tác vụ tải dữ liệu
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Dữ liệu đã được tải!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">reject</span><span class="p">(</span><span class="s2">&#34;Lỗi khi tải dữ liệu.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">fetchData</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">))</span>  <span class="c1">// &#34;Dữ liệu đã được tải!&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">));</span> <span class="c1">// Nếu có lỗi
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">Trong</span> <span class="nx">ví</span> <span class="nx">dụ</span> <span class="nx">trên</span><span class="p">,</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="nx">giả</span> <span class="nx">lập</span> <span class="nx">việc</span> <span class="nx">tải</span> <span class="nx">dữ</span> <span class="nx">liệu</span> <span class="nx">và</span> <span class="nx">trả</span> <span class="nx">về</span> <span class="nx">một</span> <span class="nb">Promise</span><span class="p">.</span> <span class="nx">Sau</span> <span class="mi">2</span> <span class="nx">giây</span><span class="p">,</span> <span class="nx">nếu</span> <span class="nx">việc</span> <span class="nx">tải</span> <span class="nx">thành</span> <span class="nx">công</span><span class="p">,</span> <span class="nb">Promise</span> <span class="nx">sẽ</span> <span class="nx">được</span> <span class="nx">resolve</span><span class="p">,</span> <span class="nx">nếu</span> <span class="nx">không</span> <span class="nx">sẽ</span> <span class="nx">bị</span> <span class="nx">reject</span><span class="p">.</span>
+</span></span></code></pre></div><h2 id="2-asyncawait-trong-javascript">
+  2. async/await trong JavaScript
+  <a class="heading-link" href="#2-asyncawait-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="21-asyncawait-là-gì">
+  2.1. async/await Là Gì?
+  <a class="heading-link" href="#21-asyncawait-l%c3%a0-g%c3%ac">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>async và await là cách viết tắt để làm việc với Promises. async được sử dụng để khai báo một hàm bất đồng bộ, còn await được sử dụng để &ldquo;chờ đợi&rdquo; kết quả của một Promise trong một hàm bất đồng bộ.</p>
+<h2 id="22-sử-dụng-asyncawait">
+  2.2. Sử Dụng async/await
+  <a class="heading-link" href="#22-s%e1%bb%ad-d%e1%bb%a5ng-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Khi bạn sử dụng async và await, mã của bạn sẽ trở nên dễ đọc và dễ hiểu hơn. Thay vì phải sử dụng .then() và .catch(), bạn có thể &ldquo;chờ đợi&rdquo; kết quả của một Promise như thể bạn đang làm việc với các tác vụ đồng bộ.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">success</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;Dữ liệu đã được tải!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">&#34;Lỗi khi tải dữ liệu.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">loadData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetchData</span><span class="p">();</span> <span class="c1">// Chờ đợi kết quả từ fetchData
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>  <span class="c1">// &#34;Dữ liệu đã được tải!&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>  <span class="c1">// &#34;Lỗi khi tải dữ liệu.&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">loadData</span><span class="p">();</span>
+</span></span></code></pre></div><h2 id="23-ví-dụ-về-asyncawait-với-tác-vụ-bất-đồng-bộ">
+  2.3. Ví Dụ về async/await với Tác Vụ Bất Đồng Bộ
+  <a class="heading-link" href="#23-v%c3%ad-d%e1%bb%a5-v%e1%bb%81-asyncawait-v%e1%bb%9bi-t%c3%a1c-v%e1%bb%a5-b%e1%ba%a5t-%c4%91%e1%bb%93ng-b%e1%bb%99">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">let</span> <span class="nx">success</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>  <span class="c1">// Giả lập tải dữ liệu
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Dữ liệu đã được tải!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">reject</span><span class="p">(</span><span class="s2">&#34;Lỗi khi tải dữ liệu.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">loadData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetchData</span><span class="p">();</span>  <span class="c1">// Chờ đợi Promise trả về
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>  <span class="c1">// &#34;Dữ liệu đã được tải!&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>  <span class="c1">// &#34;Lỗi khi tải dữ liệu.&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">loadData</span><span class="p">();</span>
+</span></span></code></pre></div><p>Ở ví dụ trên, hàm loadData sử dụng await để chờ đợi Promise được trả về từ hàm fetchData. Nếu Promise được resolve, kết quả sẽ được in ra màn hình. Nếu có lỗi, chúng ta sẽ bắt lỗi và hiển thị thông báo lỗi.</p>
+<h2 id="3-lợi-ích-của-asyncawait">
+  3. Lợi Ích của async/await
+  <a class="heading-link" href="#3-l%e1%bb%a3i-%c3%adch-c%e1%bb%a7a-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Dễ đọc và dễ bảo trì: Mã viết bằng async/await dễ hiểu hơn so với việc sử dụng các Promise truyền thống với .then() và .catch().
+Giảm thiểu callback hell: Với async/await, bạn không cần phải sử dụng nhiều callback lồng nhau, làm cho mã trở nên gọn gàng và dễ theo dõi hơn.
+Xử lý lỗi dễ dàng: Bạn có thể sử dụng try/catch để xử lý lỗi trong các hàm bất đồng bộ thay vì sử dụng .catch() như khi làm việc với Promises.</p>
+<h2 id="4-kết-hợp-promises-và-asyncawait">
+  4. Kết Hợp Promises và async/await
+  <a class="heading-link" href="#4-k%e1%ba%bft-h%e1%bb%a3p-promises-v%c3%a0-asyncawait">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Bạn có thể sử dụng async/await với các Promise hiện có một cách dễ dàng, giúp mã của bạn trở nên gọn gàng và dễ hiểu hơn.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">let</span> <span class="nx">success</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;Dữ liệu đã được tải!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">reject</span><span class="p">(</span><span class="s2">&#34;Lỗi khi tải dữ liệu.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">loadData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetchData</span><span class="p">();</span>  <span class="c1">// Chờ đợi Promise
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">loadData</span><span class="p">();</span>
+</span></span></code></pre></div>
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Nguyễn Bá Cường 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

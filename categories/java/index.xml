@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Blog-Nguyễn Cường</title>
+    <link>http://localhost:1313/categories/java/</link>
+    <description>Recent content in Java on Blog-Nguyễn Cường</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9 Chủ Đề Học Lập Trình Java</title>
+      <link>http://localhost:1313/posts/more-rich-content/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/more-rich-content/</guid>
+      <description>&lt;p&gt;Dưới đây là 9 chủ đề quan trọng bạn nên học khi bắt đầu với lập trình Java:&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-cấu-trúc-dữ-liệu-và-thuật-toán&#34;&gt;&#xD;&#xA;  1. Cấu Trúc Dữ Liệu Và Thuật Toán&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-c%e1%ba%a5u-tr%c3%bac-d%e1%bb%af-li%e1%bb%87u-v%c3%a0-thu%e1%ba%adt-to%c3%a1n&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Học các cấu trúc dữ liệu cơ bản như mảng, danh sách liên kết, ngăn xếp, hàng đợi, cây, đồ thị và thuật toán sắp xếp.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-lập-trình-hướng-đối-tượng-oop&#34;&gt;&#xD;&#xA;  2. Lập Trình Hướng Đối Tượng (OOP)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#2-l%e1%ba%adp-tr%c3%acnh-h%c6%b0%e1%bb%9bng-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-oop&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Java là một ngôn ngữ lập trình hướng đối tượng. Bạn sẽ học về lớp, đối tượng, kế thừa, đóng gói, và đa hình.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

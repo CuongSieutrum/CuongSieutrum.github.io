@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beginner on Blog-Nguyễn Cường</title>
+    <link>http://www.example.com/tags/beginner/</link>
+    <description>Recent content in Beginner on Blog-Nguyễn Cường</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.example.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript Cơ Bản</title>
+      <link>http://www.example.com/javascript/1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/javascript/1/</guid>
+      <description>&lt;h1 id=&#34;javascript-cơ-bản&#34;&gt;&#xD;&#xA;  JavaScript Cơ Bản&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#javascript-c%c6%a1-b%e1%ba%a3n&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;JavaScript là một ngôn ngữ lập trình phổ biến được sử dụng chủ yếu trong phát triển web. Nó có thể được chạy trên trình duyệt và server (với Node.js). Bài viết này sẽ giới thiệu các khái niệm cơ bản trong JavaScript, bao gồm khai báo biến, kiểu dữ liệu, cấu trúc điều kiện, vòng lặp, và hàm.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

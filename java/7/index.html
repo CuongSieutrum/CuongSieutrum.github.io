@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Java Cơ Bản · Blog-Nguyễn Cường
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Nguyễn Bá Cường">
+<meta name="description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Java Cơ Bản">
+  <meta name="twitter:description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+
+<meta property="og:url" content="http://localhost:1313/java/7/">
+  <meta property="og:site_name" content="Blog-Nguyễn Cường">
+  <meta property="og:title" content="Java Cơ Bản">
+  <meta property="og:description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="java">
+    <meta property="article:published_time" content="2023-07-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-11T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Basics">
+    <meta property="article:tag" content="Syntax">
+      <meta property="og:see_also" content="http://localhost:1313/java/1/">
+      <meta property="og:see_also" content="http://localhost:1313/java/2/">
+      <meta property="og:see_also" content="http://localhost:1313/java/3/">
+      <meta property="og:see_also" content="http://localhost:1313/java/4/">
+      <meta property="og:see_also" content="http://localhost:1313/java/8/">
+      <meta property="og:see_also" content="http://localhost:1313/java/9/">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/java/7/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Blog-Nguyễn Cường
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/java/">Java</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/javascript/">Java Script</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/java/7/">
+          Java Cơ Bản
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="java-cơ-bản">
+  Java Cơ Bản
+  <a class="heading-link" href="#java-c%c6%a1-b%e1%ba%a3n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Chào mừng bạn đến với bài học Java cơ bản! Ở đây, chúng ta sẽ cùng khám phá các khái niệm nền tảng giúp bạn bắt đầu hành trình học Java.</p>
+<h2 id="heading">
+  
+  <a class="heading-link" href="#heading">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<hr>
+<h2 id="1-giới-thiệu-về-java">
+  1. Giới thiệu về Java
+  <a class="heading-link" href="#1-gi%e1%bb%9bi-thi%e1%bb%87u-v%e1%bb%81-java">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java là một ngôn ngữ lập trình phổ biến, được phát triển bởi <strong>Sun Microsystems</strong> (nay thuộc Oracle). Java được thiết kế để dễ học, đa nền tảng và mạnh mẽ.</p>
+<p>Một trong những đặc điểm nổi bật của Java là <strong>WORA (Write Once, Run Anywhere)</strong> - viết một lần và chạy được trên mọi nền tảng.</p>
+<h3 id="ví-dụ-chương-trình-java-cơ-bản">
+  Ví dụ: Chương trình Java cơ bản
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-ch%c6%b0%c6%a1ng-tr%c3%acnh-java-c%c6%a1-b%e1%ba%a3n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Xin chào, thế giới!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="1-giới-thiệu-về-java-1">
+  1. Giới thiệu về Java
+  <a class="heading-link" href="#1-gi%e1%bb%9bi-thi%e1%bb%87u-v%e1%bb%81-java-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java là một ngôn ngữ lập trình phổ biến, được phát triển bởi <strong>Sun Microsystems</strong> (nay thuộc Oracle). Java được thiết kế để dễ học, đa nền tảng và mạnh mẽ.</p>
+<p>Một trong những đặc điểm nổi bật của Java là <strong>WORA (Write Once, Run Anywhere)</strong> - viết một lần và chạy được trên mọi nền tảng.</p>
+<h3 id="ví-dụ-chương-trình-java-cơ-bản-1">
+  Ví dụ: Chương trình Java cơ bản
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-ch%c6%b0%c6%a1ng-tr%c3%acnh-java-c%c6%a1-b%e1%ba%a3n-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Xin chào, thế giới!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="1-giới-thiệu-về-java-2">
+  1. Giới thiệu về Java
+  <a class="heading-link" href="#1-gi%e1%bb%9bi-thi%e1%bb%87u-v%e1%bb%81-java-2">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java là một ngôn ngữ lập trình phổ biến, được phát triển bởi <strong>Sun Microsystems</strong> (nay thuộc Oracle). Java được thiết kế để dễ học, đa nền tảng và mạnh mẽ.</p>
+<p>Một trong những đặc điểm nổi bật của Java là <strong>WORA (Write Once, Run Anywhere)</strong> - viết một lần và chạy được trên mọi nền tảng.</p>
+<h3 id="ví-dụ-chương-trình-java-cơ-bản-2">
+  Ví dụ: Chương trình Java cơ bản
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-ch%c6%b0%c6%a1ng-tr%c3%acnh-java-c%c6%a1-b%e1%ba%a3n-2">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Xin chào, thế giới!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="1-giới-thiệu-về-java-3">
+  1. Giới thiệu về Java
+  <a class="heading-link" href="#1-gi%e1%bb%9bi-thi%e1%bb%87u-v%e1%bb%81-java-3">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java là một ngôn ngữ lập trình phổ biến, được phát triển bởi <strong>Sun Microsystems</strong> (nay thuộc Oracle). Java được thiết kế để dễ học, đa nền tảng và mạnh mẽ.</p>
+<p>Một trong những đặc điểm nổi bật của Java là <strong>WORA (Write Once, Run Anywhere)</strong> - viết một lần và chạy được trên mọi nền tảng.</p>
+<h3 id="ví-dụ-chương-trình-java-cơ-bản-3">
+  Ví dụ: Chương trình Java cơ bản
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-ch%c6%b0%c6%a1ng-tr%c3%acnh-java-c%c6%a1-b%e1%ba%a3n-3">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Xin chào, thế giới!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="1-giới-thiệu-về-java-4">
+  1. Giới thiệu về Java
+  <a class="heading-link" href="#1-gi%e1%bb%9bi-thi%e1%bb%87u-v%e1%bb%81-java-4">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java là một ngôn ngữ lập trình phổ biến, được phát triển bởi <strong>Sun Microsystems</strong> (nay thuộc Oracle). Java được thiết kế để dễ học, đa nền tảng và mạnh mẽ.</p>
+<p>Một trong những đặc điểm nổi bật của Java là <strong>WORA (Write Once, Run Anywhere)</strong> - viết một lần và chạy được trên mọi nền tảng.</p>
+<h3 id="ví-dụ-chương-trình-java-cơ-bản-4">
+  Ví dụ: Chương trình Java cơ bản
+  <a class="heading-link" href="#v%c3%ad-d%e1%bb%a5-ch%c6%b0%c6%a1ng-tr%c3%acnh-java-c%c6%a1-b%e1%ba%a3n-4">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Xin chào, thế giới!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div>
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Nguyễn Bá Cường 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

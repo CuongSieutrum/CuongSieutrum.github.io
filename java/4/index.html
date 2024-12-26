@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Java Cơ Bản · Blog-Nguyễn Cường
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Nguyễn Bá Cường">
+<meta name="description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Java Cơ Bản">
+  <meta name="twitter:description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+
+<meta property="og:url" content="http://www.example.com/java/4/">
+  <meta property="og:site_name" content="Blog-Nguyễn Cường">
+  <meta property="og:title" content="Java Cơ Bản">
+  <meta property="og:description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="java">
+    <meta property="article:published_time" content="2023-07-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-11T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Basics">
+    <meta property="article:tag" content="Syntax">
+      <meta property="og:see_also" content="http://www.example.com/java/1/">
+      <meta property="og:see_also" content="http://www.example.com/java/2/">
+      <meta property="og:see_also" content="http://www.example.com/java/3/">
+      <meta property="og:see_also" content="http://www.example.com/java/5/">
+
+
+
+
+<link rel="canonical" href="http://www.example.com/java/4/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://www.example.com/">
+      Blog-Nguyễn Cường
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/java/">Java</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/javascript/">Java Script</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/java/4/">
+          Java Cơ Bản
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="java-cơ-bản">
+  Java Cơ Bản
+  <a class="heading-link" href="#java-c%c6%a1-b%e1%ba%a3n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Chào mừng bạn đến với bài học Java cơ bản! Ở đây, chúng ta sẽ cùng khám phá các khái niệm nền tảng giúp bạn bắt đầu hành trình học Java.</p>
+<h2 id="heading">
+  
+  <a class="heading-link" href="#heading">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<hr>
+<h2 id="1-xử-lý-ngoại-lệ-trong-java-exception-handling">
+  1. Xử lý Ngoại lệ trong Java (Exception Handling)
+  <a class="heading-link" href="#1-x%e1%bb%ad-l%c3%bd-ngo%e1%ba%a1i-l%e1%bb%87-trong-java-exception-handling">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Trong lập trình Java, ngoại lệ (exception) là những sự kiện không mong muốn xảy ra trong quá trình chạy chương trình, làm gián đoạn dòng chảy bình thường của chương trình. Để xử lý những tình huống này, Java cung cấp cơ chế xử lý ngoại lệ giúp chương trình tiếp tục thực thi một cách an toàn và hiệu quả.</p>
+<h2 id="1-cấu-trúc-cơ-bản-của-xử-lý-ngoại-lệ">
+  1. Cấu trúc cơ bản của xử lý ngoại lệ
+  <a class="heading-link" href="#1-c%e1%ba%a5u-tr%c3%bac-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-x%e1%bb%ad-l%c3%bd-ngo%e1%ba%a1i-l%e1%bb%87">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java sử dụng khối mã try-catch để xử lý ngoại lệ. Cấu trúc cơ bản như sau:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Sao</span><span class="w"> </span><span class="n">chép</span><span class="w"> </span><span class="n">mã</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Mã có thể gây ra ngoại lệ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">ExceptionType</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Xử lý ngoại lệ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Mã này luôn được thực thi, dù có ngoại lệ hay không</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>try block: Đoạn mã có thể gây ra ngoại lệ.
+catch block: Bắt và xử lý ngoại lệ.
+finally block: Làm sạch các tài nguyên (nếu có), mã này luôn được thực thi dù có xảy ra ngoại lệ hay không.
+Ví dụ đơn giản</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Sao</span><span class="w"> </span><span class="n">chép</span><span class="w"> </span><span class="n">mã</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Example</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">5</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">numbers</span><span class="o">[</span><span class="n">10</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">50</span><span class="p">;</span><span class="w">  </span><span class="c1">// Đây sẽ gây ra ngoại lệ ArrayIndexOutOfBoundsException</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">ArrayIndexOutOfBoundsException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Ngoại lệ: Lỗi chỉ mục mảng ngoài phạm vi!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Đoạn mã này sẽ luôn được thực thi.&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Giải thích:</p>
+<p>Khối try chứa mã có thể gây ra ngoại lệ (ở đây là lỗi chỉ mục mảng).
+Khối catch sẽ bắt ngoại lệ ArrayIndexOutOfBoundsException và hiển thị thông báo lỗi.
+Khối finally sẽ luôn được thực thi, bất kể có xảy ra ngoại lệ hay không.
+Các loại ngoại lệ trong Java
+Checked Exceptions (Ngoại lệ đã được kiểm tra):</p>
+<p>Là các ngoại lệ mà người lập trình phải xử lý hoặc khai báo trong phương thức bằng cách sử dụng từ khóa throws. Ví dụ: IOException, SQLException.
+Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Sao</span><span class="w"> </span><span class="n">chép</span><span class="w"> </span><span class="n">mã</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">readFile</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">IOException</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">FileReader</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FileReader</span><span class="p">(</span><span class="s">&#34;file.txt&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="2-unchecked-exceptions-ngoại-lệ-không-kiểm-tra">
+  2. Unchecked Exceptions (Ngoại lệ không kiểm tra):
+  <a class="heading-link" href="#2-unchecked-exceptions-ngo%e1%ba%a1i-l%e1%bb%87-kh%c3%b4ng-ki%e1%bb%83m-tra">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Là các ngoại lệ không bắt buộc phải xử lý hoặc khai báo. Chúng là các ngoại lệ kế thừa từ lớp RuntimeException. Ví dụ: NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException.
+Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Sao</span><span class="w"> </span><span class="n">chép</span><span class="w"> </span><span class="n">mã</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">divide</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">10</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w">  </span><span class="c1">// Lỗi ArithmeticException (chia cho 0)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Nâng cao: Tạo Ngoại lệ tùy chỉnh
+Bạn có thể tạo ngoại lệ riêng của mình bằng cách kế thừa từ lớp Exception hoặc RuntimeException.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Sao</span><span class="w"> </span><span class="n">chép</span><span class="w"> </span><span class="n">mã</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">InvalidAgeException</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">InvalidAgeException</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kd">super</span><span class="p">(</span><span class="n">message</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Example</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">checkAge</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">InvalidAgeException</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InvalidAgeException</span><span class="p">(</span><span class="s">&#34;Tuổi không hợp lệ! Cần ít nhất 18 tuổi.&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">checkAge</span><span class="p">(</span><span class="n">15</span><span class="p">);</span><span class="w">  </span><span class="c1">// Gây ra ngoại lệ InvalidAgeException</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">InvalidAgeException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Giải thích:</p>
+<p>InvalidAgeException là một ngoại lệ tùy chỉnh, kế thừa từ Exception.
+Phương thức checkAge sẽ ném ngoại lệ nếu tuổi nhỏ hơn 18.
+Một số phương thức hữu ích trong lớp Throwable (lớp cha của Exception)
+getMessage(): Trả về thông báo chi tiết về ngoại lệ.
+printStackTrace(): In ra ngăn xếp gọi của ngoại lệ, giúp bạn xác định vị trí xảy ra lỗi.
+Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Sao</span><span class="w"> </span><span class="n">chép</span><span class="w"> </span><span class="n">mã</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">numbers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="n">5</span><span class="o">]</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">numbers</span><span class="o">[</span><span class="n">10</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">50</span><span class="p">;</span><span class="w">  </span><span class="c1">// Lỗi ArrayIndexOutOfBoundsException</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">ArrayIndexOutOfBoundsException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">  </span><span class="c1">// In thông tin chi tiết của ngoại lệ</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Tổng kết
+Xử lý ngoại lệ giúp chương trình hoạt động ổn định hơn, tránh việc bị dừng đột ngột khi gặp lỗi.
+Java cung cấp cơ chế try-catch-finally để xử lý ngoại lệ, với khả năng quản lý ngoại lệ theo từng loại (checked và unchecked).
+Các ngoại lệ có thể được tùy chỉnh để phục vụ nhu cầu riêng của ứng dụng.
+Hy vọng rằng những kiến thức về xử lý ngoại lệ trong Java này sẽ giúp bạn viết mã an toàn và hiệu quả hơn.</p>
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Nguyễn Bá Cường 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

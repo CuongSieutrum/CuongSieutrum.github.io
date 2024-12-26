@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>johndoe</title>
+    <title>Blog-Nguyễn Cường</title>
     <link>http://www.example.com/</link>
-    <description>Recent content on johndoe</description>
+    <description>Recent content on Blog-Nguyễn Cường</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu</title>
+      <link>http://www.example.com/about/</link>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/about/</guid>
+      <description>&lt;p&gt;Xin chào! Mình là &lt;strong&gt;Nguyễn Bá Cường&lt;/strong&gt;, một người đam mê công nghệ và yêu thích việc chia sẻ những kiến thức, kinh nghiệm về lập trình Java và JavaScript. Đây là không gian cá nhân của mình để ghi lại hành trình, ý tưởng và những điều thú vị trong cuộc sống.&lt;/p&gt;&#xA;&lt;h3 id=&#34;một-chút-về-mình&#34;&gt;&#xD;&#xA;  Một chút về mình:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#m%e1%bb%99t-ch%c3%bat-v%e1%bb%81-m%c3%acnh&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔭 Hiện tại mình đang tập trung vào &lt;strong&gt;một dự án lập trình mạng&lt;/strong&gt; với mục tiêu phát triển các ứng dụng mạng hiệu quả và an toàn.&lt;/li&gt;&#xA;&lt;li&gt;🌱 Mình đang tìm hiểu sâu hơn về &lt;strong&gt;giao thức mạng&lt;/strong&gt;, &lt;strong&gt;API&lt;/strong&gt; và &lt;strong&gt;bảo mật hệ thống&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;🎯 Mục tiêu của mình là trở thành một chuyên gia trong lĩnh vực lập trình mạng và phát triển phần mềm.&lt;/li&gt;&#xA;&lt;li&gt;✨ Fun fact: Ngoài lập trình, mình còn thích khám phá các công nghệ mới và chơi cờ vua để rèn luyện tư duy.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;nội-dung-trên-blog&#34;&gt;&#xD;&#xA;  Nội dung trên blog:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#n%e1%bb%99i-dung-tr%c3%aan-blog&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Blog của mình xoay quanh nhiều chủ đề thú vị, bao gồm:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript DOM (Document Object Model)</title>
+      <link>http://www.example.com/javascript/5/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/javascript/5/</guid>
+      <description>&lt;h1 id=&#34;javascript-dom-document-object-model&#34;&gt;&#xD;&#xA;  JavaScript DOM (Document Object Model)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#javascript-dom-document-object-model&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;DOM (Document Object Model)&lt;/strong&gt; là một khái niệm quan trọng trong phát triển web. Nó cung cấp một cách để JavaScript có thể truy cập và thay đổi nội dung, cấu trúc và kiểu dáng của các tài liệu HTML hoặc XML. Khi bạn làm việc với các trang web, bạn sẽ thường xuyên cần sử dụng DOM để thay đổi các phần tử trên trang mà không cần phải tải lại toàn bộ trang.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await</title>
+      <link>http://www.example.com/javascript/4/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/javascript/4/</guid>
+      <description>&lt;h1 id=&#34;lập-trình-bất-đồng-bộ-asynchronous-programming-trong-javascript-promises-và-asyncawait&#34;&gt;&#xD;&#xA;  Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#l%e1%ba%adp-tr%c3%acnh-b%e1%ba%a5t-%c4%91%e1%bb%93ng-b%e1%bb%99-asynchronous-programming-trong-javascript-promises-v%c3%a0-asyncawait&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Trong phát triển web hiện đại, việc xử lý các tác vụ bất đồng bộ là rất quan trọng, đặc biệt khi làm việc với các API, truy vấn cơ sở dữ liệu, hoặc các tác vụ yêu cầu thời gian như tải dữ liệu từ máy chủ. JavaScript cung cấp các công cụ mạnh mẽ để làm việc với các tác vụ bất đồng bộ, trong đó Promises và async/await là hai công cụ phổ biến nhất.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lập Trình Hướng Đối Tượng (OOP) trong JavaScript</title>
+      <link>http://www.example.com/javascript/2/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/javascript/2/</guid>
+      <description>&lt;h1 id=&#34;lập-trình-hướng-đối-tượng-oop-trong-javascript&#34;&gt;&#xD;&#xA;  Lập Trình Hướng Đối Tượng (OOP) trong JavaScript&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#l%e1%ba%adp-tr%c3%acnh-h%c6%b0%e1%bb%9bng-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-oop-trong-javascript&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Lập trình hướng đối tượng (OOP) là một phương pháp lập trình phổ biến giúp tổ chức mã nguồn hiệu quả hơn thông qua việc sử dụng các đối tượng. JavaScript hỗ trợ OOP và cung cấp các khái niệm như lớp (class), đối tượng (object), kế thừa (inheritance), đóng gói (encapsulation) và đa hình (polymorphism). Trong bài viết này, chúng ta sẽ khám phá các khái niệm này và cách sử dụng chúng trong JavaScript.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quản Lý Sự Kiện (Event Handling) trong JavaScript</title>
+      <link>http://www.example.com/javascript/3/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/javascript/3/</guid>
+      <description>&lt;h1 id=&#34;quản-lý-sự-kiện-event-handling-trong-javascript&#34;&gt;&#xD;&#xA;  Quản Lý Sự Kiện (Event Handling) trong JavaScript&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#qu%e1%ba%a3n-l%c3%bd-s%e1%bb%b1-ki%e1%bb%87n-event-handling-trong-javascript&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Quản lý sự kiện (Event Handling) trong JavaScript cho phép chúng ta xử lý các hành động của người dùng, như nhấp chuột, di chuột, nhập văn bản, v.v., và phản hồi lại những hành động này. Việc sử dụng các sự kiện là một phần không thể thiếu trong phát triển web, giúp làm cho ứng dụng trở nên tương tác và thân thiện hơn.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Guia de Sintaxe Markdown</title>
       <link>http://www.example.com/posts/markdown-syntax.pt-br/</link>
@@ -37,18 +72,74 @@
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
     </item>
     <item>
+      <title>Java</title>
+      <link>http://www.example.com/java/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/java/</guid>
+      <description>&lt;p&gt;Hugo Coder provides some &lt;strong&gt;Custom Shortcodes&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>http://www.example.com/posts/more-rich-content/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/posts/more-rich-content/</guid>
+      <description>&lt;p&gt;Hugo Coder provides some &lt;strong&gt;Custom Shortcodes&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Java Cơ Bản</title>
+      <link>http://www.example.com/java/1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/java/1/</guid>
+      <description>&lt;h1 id=&#34;java-cơ-bản&#34;&gt;&#xD;&#xA;  Java Cơ Bản&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-c%c6%a1-b%e1%ba%a3n&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Chào mừng bạn đến với bài học Java cơ bản! Ở đây, chúng ta sẽ cùng khám phá các khái niệm nền tảng giúp bạn bắt đầu hành trình học Java.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Java Cơ Bản</title>
+      <link>http://www.example.com/java/2/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/java/2/</guid>
+      <description>&lt;h1 id=&#34;lập-trình-hướng-đối-tượng-oop&#34;&gt;&#xD;&#xA;  Lập trình hướng đối tượng (OOP)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#l%e1%ba%adp-tr%c3%acnh-h%c6%b0%e1%bb%9bng-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-oop&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Chào mừng bạn đến với bài học Java cơ bản! Ở đây, chúng ta sẽ cùng khám phá các khái niệm nền tảng giúp bạn bắt đầu hành trình học Java.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Java Cơ Bản</title>
+      <link>http://www.example.com/java/3/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/java/3/</guid>
+      <description>&lt;h1 id=&#34;java-cơ-bản&#34;&gt;&#xD;&#xA;  Java Cơ Bản&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-c%c6%a1-b%e1%ba%a3n&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Chào mừng bạn đến với bài học Java cơ bản! Ở đây, chúng ta sẽ cùng khám phá các khái niệm nền tảng giúp bạn bắt đầu hành trình học Java.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Java Cơ Bản</title>
+      <link>http://www.example.com/java/4/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/java/4/</guid>
+      <description>&lt;h1 id=&#34;java-cơ-bản&#34;&gt;&#xD;&#xA;  Java Cơ Bản&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-c%c6%a1-b%e1%ba%a3n&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Chào mừng bạn đến với bài học Java cơ bản! Ở đây, chúng ta sẽ cùng khám phá các khái niệm nền tảng giúp bạn bắt đầu hành trình học Java.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Java Collections Framework</title>
+      <link>http://www.example.com/java/5/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/java/5/</guid>
+      <description>&lt;h1 id=&#34;java-collections-framework&#34;&gt;&#xD;&#xA;  Java Collections Framework&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#java-collections-framework&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Java Collections Framework (JCF) là một bộ các lớp và giao diện được cung cấp trong Java để làm việc với các nhóm đối tượng. Nó cung cấp một cách tiếp cận thống nhất để lưu trữ và xử lý dữ liệu, giúp lập trình viên dễ dàng thao tác với các tập hợp đối tượng.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-các-thành-phần-chính-trong-collections-framework&#34;&gt;&#xD;&#xA;  1. Các thành phần chính trong Collections Framework&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-c%c3%a1c-th%c3%a0nh-ph%e1%ba%a7n-ch%c3%adnh-trong-collections-framework&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Java Collections Framework bao gồm các thành phần chính sau:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://www.example.com/javascript/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/javascript/</guid>
+      <description>&lt;p&gt;JavaScript is a versatile and essential language for modern web development. Below are 9 key topics to help you master JavaScript fundamentals and beyond.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript Cơ Bản</title>
+      <link>http://www.example.com/javascript/1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.example.com/javascript/1/</guid>
+      <description>&lt;h1 id=&#34;javascript-cơ-bản&#34;&gt;&#xD;&#xA;  JavaScript Cơ Bản&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#javascript-c%c6%a1-b%e1%ba%a3n&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;JavaScript là một ngôn ngữ lập trình phổ biến được sử dụng chủ yếu trong phát triển web. Nó có thể được chạy trên trình duyệt và server (với Node.js). Bài viết này sẽ giới thiệu các khái niệm cơ bản trong JavaScript, bao gồm khai báo biến, kiểu dữ liệu, cấu trúc điều kiện, vòng lặp, và hàm.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mais Conteúdo Rico</title>
       <link>http://www.example.com/posts/more-rich-content.pt-br/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
       <guid>http://www.example.com/posts/more-rich-content.pt-br/</guid>
       <description>&lt;p&gt;O Hugo Coder proporciona alguns Shortcodes Customizados.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>More Rich Content</title>
-      <link>http://www.example.com/posts/more-rich-content/</link>
-      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/posts/more-rich-content/</guid>
-      <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Configuração de Equações Matemáticas</title>
@@ -163,46 +254,18 @@
       <description></description>
     </item>
     <item>
-      <title>About</title>
-      <link>http://www.example.com/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/about/</guid>
-      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;&#xA;&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://www.example.com/about.pt-br/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/about.pt-br/</guid>
-      <description>&lt;p&gt;Escrito em Go, Hugo é um gerador de sites estáticos de código aberto disponível sobre a licença &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache Licence 2.0.&lt;/a&gt; O Hugo suporta TOML, YAML e JSON como arquivos de dados, Markdown e HTML como arquivos de conteúdo, e usa shortcodes para adicionar conteúdos ricos. Outras funcionalidades notaveis são taxonomias, modo multilingual, processamento de imagens, formatos de saída customizaveis, minificação de HTML/CSS/JS e suporte a fluxos SASS/SCSS.&lt;/p&gt;&#xA;&lt;p&gt;O Hugo faz o uso de vários projetos de código aberto incluíndo:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Contact</title>
       <link>http://www.example.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.example.com/contact/</guid>
-      <description>&lt;p&gt;Follow me, @johndoe.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contato</title>
-      <link>http://www.example.com/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/contact/</guid>
-      <description>&lt;p&gt;Me siga em @joaoninguem.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;thông-tin-liên-hệ&#34;&gt;&#xD;&#xA;  Thông tin liên hệ&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#th%c3%b4ng-tin-li%c3%aan-h%e1%bb%87&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Xin chào! Bạn có thể liên hệ với mình qua các kênh dưới đây:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://via.placeholder.com/150?text=Profile&amp;#43;Image&#34; alt=&#34;Ảnh đại diện của tôi&#34; title=&#34;Profile Image&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;👤 Họ và tên&lt;/strong&gt;: Nguyễn Bá Cường&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🎂 Ngày sinh&lt;/strong&gt;: 16/11/2003&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;📧 Email&lt;/strong&gt;: &lt;a href=&#34;mailto:nguyenbacuong161103@gmail.com&#34; &gt;nguyenbacuong161103@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;🌐 Facebook&lt;/strong&gt;: &lt;a href=&#34;https://facebook.com/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nguyễn Bá Cường&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;📱 Zalo&lt;/strong&gt;: Số điện thoại của bạn&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;📸 Instagram&lt;/strong&gt;: &lt;a href=&#34;https://instagram.com/username&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@username&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Cảm ơn bạn đã ghé thăm! 😊 Đừng ngần ngại liên hệ nếu bạn có bất kỳ câu hỏi hoặc muốn kết nối.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Projects</title>
       <link>http://www.example.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.example.com/projects/</guid>
-      <description>&lt;p&gt;Nothing to see here&amp;hellip; Move along!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projetos</title>
-      <link>http://www.example.com/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/projects/</guid>
-      <description>&lt;p&gt;Nada para ver aqui.. Circulando!&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;i-classfas-fa-trucki-quản-lý-logistics---website&#34;&gt;&#xD;&#xA;  &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; QUẢN LÝ LOGISTICS - WEBSITE&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#i-classfas-fa-trucki-qu%e1%ba%a3n-l%c3%bd-logistics---website&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;&lt;img src=&#34;https://via.placeholder.com/800x400?text=Logistics&amp;#43;Website&#34; alt=&#34;Hình ảnh minh họa&#34; title=&#34;Logistics Website&#34;&gt;&lt;br&gt;&#xA;&lt;strong&gt;⏳ Thời gian&lt;/strong&gt;: 7/2023 - 9/2023&lt;br&gt;&#xA;&lt;strong&gt;👥 Số lượng người tham gia&lt;/strong&gt;: 4&lt;br&gt;&#xA;&lt;strong&gt;🛠️ Công nghệ sử dụng&lt;/strong&gt;: HTML, CSS, JavaScript&lt;br&gt;&#xA;&lt;strong&gt;📄 Mô tả công việc&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🚚 Theo dõi quá trình vận chuyển, lưu kho.&lt;/li&gt;&#xA;&lt;li&gt;📦 Quản lý kho và đơn hàng.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;i-classfas-fa-coffeei-quản-lý-quán-cafe---winform&#34;&gt;&#xD;&#xA;  &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; QUẢN LÝ QUÁN CAFE - WINFORM&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#i-classfas-fa-coffeei-qu%e1%ba%a3n-l%c3%bd-qu%c3%a1n-cafe---winform&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;&lt;img src=&#34;https://via.placeholder.com/800x400?text=Cafe&amp;#43;Management&#34; alt=&#34;Hình ảnh minh họa&#34; title=&#34;Cafe Management&#34;&gt;&lt;br&gt;&#xA;&lt;strong&gt;⏳ Thời gian&lt;/strong&gt;: 8/2023 - 10/2023&lt;br&gt;&#xA;&lt;strong&gt;👥 Số lượng người tham gia&lt;/strong&gt;: 6&lt;br&gt;&#xA;&lt;strong&gt;🛠️ Công nghệ sử dụng&lt;/strong&gt;: C#&lt;br&gt;&#xA;&lt;strong&gt;📄 Mô tả công việc&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

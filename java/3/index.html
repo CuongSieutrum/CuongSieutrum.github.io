@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Java Cơ Bản · Blog-Nguyễn Cường
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Nguyễn Bá Cường">
+<meta name="description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Java Cơ Bản">
+  <meta name="twitter:description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+
+<meta property="og:url" content="http://www.example.com/java/3/">
+  <meta property="og:site_name" content="Blog-Nguyễn Cường">
+  <meta property="og:title" content="Java Cơ Bản">
+  <meta property="og:description" content="Học các khái niệm cơ bản của Java, bao gồm cú pháp, kiểu dữ liệu, biến và vòng lặp.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="java">
+    <meta property="article:published_time" content="2023-07-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-11T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Basics">
+    <meta property="article:tag" content="Syntax">
+      <meta property="og:see_also" content="http://www.example.com/java/1/">
+      <meta property="og:see_also" content="http://www.example.com/java/2/">
+      <meta property="og:see_also" content="http://www.example.com/java/4/">
+      <meta property="og:see_also" content="http://www.example.com/java/5/">
+
+
+
+
+<link rel="canonical" href="http://www.example.com/java/3/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://www.example.com/">
+      Blog-Nguyễn Cường
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/java/">Java</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/javascript/">Java Script</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/java/3/">
+          Java Cơ Bản
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="java-cơ-bản">
+  Java Cơ Bản
+  <a class="heading-link" href="#java-c%c6%a1-b%e1%ba%a3n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Chào mừng bạn đến với bài học Java cơ bản! Ở đây, chúng ta sẽ cùng khám phá các khái niệm nền tảng giúp bạn bắt đầu hành trình học Java.</p>
+<h2 id="heading">
+  
+  <a class="heading-link" href="#heading">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<hr>
+<h2 id="1-giới-thiệu-về-quản-lý-bộ-nhớ-và-garbage-collection-trong-java">
+  1. Giới thiệu về quản lý bộ nhớ và Garbage Collection trong Java
+  <a class="heading-link" href="#1-gi%e1%bb%9bi-thi%e1%bb%87u-v%e1%bb%81-qu%e1%ba%a3n-l%c3%bd-b%e1%bb%99-nh%e1%bb%9b-v%c3%a0-garbage-collection-trong-java">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Java sử dụng một hệ thống quản lý bộ nhớ tự động và <strong>Garbage Collection (GC)</strong> để giải phóng bộ nhớ mà không cần sự can thiệp trực tiếp từ lập trình viên. Hệ thống này giúp đảm bảo rằng bộ nhớ của ứng dụng được quản lý hiệu quả, tránh rò rỉ bộ nhớ và giúp việc phát triển phần mềm trở nên dễ dàng hơn.</p>
+<h3 id="a-heap-memory-bộ-nhớ-đống">
+  a) <strong>Heap Memory (Bộ nhớ đống)</strong>
+  <a class="heading-link" href="#a-heap-memory-b%e1%bb%99-nh%e1%bb%9b-%c4%91%e1%bb%91ng">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Heap</strong> là nơi lưu trữ các đối tượng (objects) và mảng (arrays) trong Java.</li>
+<li>Tất cả các đối tượng được tạo thông qua từ khóa <code>new</code> đều được lưu trữ trong Heap.</li>
+<li>Bộ nhớ trong Heap là <strong>dynamically allocated</strong>, có nghĩa là bộ nhớ được cấp phát và giải phóng tại thời gian chạy (runtime).</li>
+</ul>
+<h3 id="b-stack-memory-bộ-nhớ-ngăn-xếp">
+  b) <strong>Stack Memory (Bộ nhớ ngăn xếp)</strong>
+  <a class="heading-link" href="#b-stack-memory-b%e1%bb%99-nh%e1%bb%9b-ng%c4%83n-x%e1%ba%bfp">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Stack</strong> lưu trữ các biến cục bộ và các tham số phương thức.</li>
+<li>Khi một phương thức được gọi, một <strong>stack frame</strong> sẽ được tạo ra trong Stack để lưu trữ các biến và tham số.</li>
+<li>Khi phương thức kết thúc, stack frame của nó bị phá hủy và bộ nhớ được giải phóng.</li>
+</ul>
+<h2 id="2-garbage-collection-trong-java">
+  2. <strong>Garbage Collection trong Java</strong>
+  <a class="heading-link" href="#2-garbage-collection-trong-java">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>Garbage Collection (GC)</strong> là quá trình tự động trong Java để giải phóng bộ nhớ của các đối tượng không còn được tham chiếu nữa, tức là những đối tượng không thể truy cập từ bất kỳ đâu trong chương trình.</p>
+<h3 id="a-khi-nào-garbage-collection-xảy-ra">
+  a) <strong>Khi nào Garbage Collection xảy ra?</strong>
+  <a class="heading-link" href="#a-khi-n%c3%a0o-garbage-collection-x%e1%ba%a3y-ra">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Garbage Collection sẽ xảy ra khi <strong>JVM</strong> nhận thấy có đối tượng không còn tham chiếu nào nữa và bộ nhớ cần được giải phóng để sử dụng cho các đối tượng mới.</li>
+<li><strong>GC không phải là một quá trình có thể kiểm soát trực tiếp</strong>; JVM quyết định khi nào cần thực hiện Garbage Collection.</li>
+</ul>
+<h3 id="b-cách-garbage-collection-hoạt-động">
+  b) <strong>Cách Garbage Collection hoạt động</strong>
+  <a class="heading-link" href="#b-c%c3%a1ch-garbage-collection-ho%e1%ba%a1t-%c4%91%e1%bb%99ng">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p><strong>Mark-and-Sweep Algorithm</strong> là thuật toán cơ bản mà Garbage Collector sử dụng. Quá trình này bao gồm hai giai đoạn chính:</p>
+<ol>
+<li><strong>Mark phase (Đánh dấu):</strong> JVM sẽ đánh dấu tất cả các đối tượng mà chương trình còn tham chiếu tới (<strong>reachable objects</strong>).</li>
+<li><strong>Sweep phase (Quét):</strong> Sau khi đánh dấu, JVM sẽ quét bộ nhớ và giải phóng các đối tượng không còn được tham chiếu (<strong>unreachable objects</strong>).</li>
+</ol>
+</li>
+<li>
+<p><strong>Generational Garbage Collection</strong>: JVM chia bộ nhớ Heap thành các khu vực:</p>
+<ul>
+<li><strong>Young Generation:</strong> Là nơi chứa các đối tượng mới được tạo ra. Các đối tượng này thường có tuổi thọ ngắn, nên việc GC ở đây diễn ra thường xuyên hơn.</li>
+<li><strong>Old Generation (Tenured Generation):</strong> Là nơi chứa các đối tượng sống lâu dài. Các đối tượng này di chuyển từ Young Generation vào Old Generation khi chúng tồn tại lâu hơn.</li>
+<li><strong>Permanent Generation (hoặc Metaspace trong Java 8+):</strong> Chứa các dữ liệu về cấu trúc lớp và metadata của chương trình.</li>
+</ul>
+</li>
+</ul>
+<h4 id="tóm-tắt-generational-garbage-collection">
+  Tóm tắt <strong>Generational Garbage Collection</strong>:
+  <a class="heading-link" href="#t%c3%b3m-t%e1%ba%aft-generational-garbage-collection">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li><strong>Minor GC:</strong> Xảy ra khi <strong>Young Generation</strong> đầy. Đây là một quá trình nhanh chóng.</li>
+<li><strong>Major GC (Full GC):</strong> Xảy ra khi <strong>Old Generation</strong> đầy, và quá trình này mất nhiều thời gian hơn vì phải quét toàn bộ bộ nhớ Heap.</li>
+</ul>
+<h3 id="c-các-thuật-toán-garbage-collection-trong-jvm">
+  c) <strong>Các thuật toán Garbage Collection trong JVM</strong>
+  <a class="heading-link" href="#c-c%c3%a1c-thu%e1%ba%adt-to%c3%a1n-garbage-collection-trong-jvm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Serial GC:</strong> Một bộ thu gom rác đơn giản, thực hiện toàn bộ Garbage Collection trong một luồng đơn. Thường được sử dụng trong ứng dụng đơn giản hoặc yêu cầu bộ nhớ ít.</li>
+<li><strong>Parallel GC:</strong> Cải thiện Serial GC bằng cách sử dụng nhiều luồng để thu gom rác.</li>
+<li><strong>CMS (Concurrent Mark-Sweep) GC:</strong> Thu thập rác một cách đồng thời mà không làm gián đoạn chương trình quá lâu. Thích hợp cho ứng dụng cần độ trễ thấp.</li>
+<li><strong>G1 GC (Garbage First GC):</strong> Là bộ thu gom rác mặc định trong Java 9 trở lên, với mục tiêu giảm thiểu thời gian gián đoạn và cải thiện hiệu suất GC.</li>
+</ul>
+<h2 id="3-cấu-hình-garbage-collection-trong-java">
+  3. <strong>Cấu hình Garbage Collection trong Java</strong>
+  <a class="heading-link" href="#3-c%e1%ba%a5u-h%c3%acnh-garbage-collection-trong-java">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Bạn có thể điều chỉnh hành vi của Garbage Collection trong Java thông qua các tham số của <strong>JVM</strong> khi khởi chạy chương trình. Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -XX:+UseG1GC -Xms512m -Xmx2g MyApplication
+</span></span></code></pre></div><ul>
+<li>XX:+UseG1GC: Sử dụng G1 Garbage Collector.</li>
+<li>Xms512m: Cấu hình kích thước bộ nhớ khởi tạo Heap là 512MB.</li>
+<li>Xmx2g: Cấu hình kích thước bộ nhớ tối đa của Heap là 2GB.</li>
+</ul>
+<h2 id="4-quản-lý-bộ-nhớ-hiệu-quả-trong-java">
+  4. Quản lý bộ nhớ hiệu quả trong Java
+  <a class="heading-link" href="#4-qu%e1%ba%a3n-l%c3%bd-b%e1%bb%99-nh%e1%bb%9b-hi%e1%bb%87u-qu%e1%ba%a3-trong-java">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Tránh tạo đối tượng không cần thiết: Sử dụng bộ nhớ hiệu quả bằng cách tránh tạo quá nhiều đối tượng tạm thời trong các vòng lặp.</li>
+<li>Sử dụng Weak References: Weak References giúp giữ đối tượng tồn tại trong bộ nhớ nhưng không ngăn Garbage Collector giải phóng nó nếu cần thiết.</li>
+<li>Giải phóng tài nguyên: Các tài nguyên bên ngoài như kết nối cơ sở dữ liệu hoặc tệp tin cần được đóng khi không còn sử dụng.</li>
+</ul>
+<h2 id="5-phân-tích-garbage-collection">
+  5. Phân tích Garbage Collection
+  <a class="heading-link" href="#5-ph%c3%a2n-t%c3%adch-garbage-collection">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Để phân tích hiệu suất Garbage Collection và theo dõi quá trình thu gom rác trong Java, bạn có thể sử dụng các công cụ như:</p>
+<ul>
+<li>JConsole: Công cụ giám sát và quản lý JVM.</li>
+<li>VisualVM: Công cụ giúp phân tích và theo dõi bộ nhớ, hiệu suất của ứng dụng Java.</li>
+<li>GC Logs: Bạn có thể kích hoạt ghi nhật ký Garbage Collection để theo dõi quá trình thu gom rác.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java -Xlog:gc* -Xms512m -Xmx2g MyApplication
+</span></span></code></pre></div>
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Nguyễn Bá Cường 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

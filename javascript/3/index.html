@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Quản Lý Sự Kiện (Event Handling) trong JavaScript · Blog-Nguyễn Cường
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Nguyễn Bá Cường">
+<meta name="description" content="Khám phá cách quản lý sự kiện trong JavaScript, bao gồm việc sử dụng các sự kiện, lắng nghe sự kiện và xử lý sự kiện với các phương thức khác nhau.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Quản Lý Sự Kiện (Event Handling) trong JavaScript">
+  <meta name="twitter:description" content="Khám phá cách quản lý sự kiện trong JavaScript, bao gồm việc sử dụng các sự kiện, lắng nghe sự kiện và xử lý sự kiện với các phương thức khác nhau.">
+
+<meta property="og:url" content="http://www.example.com/javascript/3/">
+  <meta property="og:site_name" content="Blog-Nguyễn Cường">
+  <meta property="og:title" content="Quản Lý Sự Kiện (Event Handling) trong JavaScript">
+  <meta property="og:description" content="Khám phá cách quản lý sự kiện trong JavaScript, bao gồm việc sử dụng các sự kiện, lắng nghe sự kiện và xử lý sự kiện với các phương thức khác nhau.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="javascript">
+    <meta property="article:published_time" content="2023-07-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-15T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Event Handling">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Web Development">
+      <meta property="og:see_also" content="http://www.example.com/javascript/5/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/4/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/2/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/1/">
+
+
+
+
+<link rel="canonical" href="http://www.example.com/javascript/3/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://www.example.com/">
+      Blog-Nguyễn Cường
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/java/">Java</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/javascript/">Java Script</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/javascript/3/">
+          Quản Lý Sự Kiện (Event Handling) trong JavaScript
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="quản-lý-sự-kiện-event-handling-trong-javascript">
+  Quản Lý Sự Kiện (Event Handling) trong JavaScript
+  <a class="heading-link" href="#qu%e1%ba%a3n-l%c3%bd-s%e1%bb%b1-ki%e1%bb%87n-event-handling-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Quản lý sự kiện (Event Handling) trong JavaScript cho phép chúng ta xử lý các hành động của người dùng, như nhấp chuột, di chuột, nhập văn bản, v.v., và phản hồi lại những hành động này. Việc sử dụng các sự kiện là một phần không thể thiếu trong phát triển web, giúp làm cho ứng dụng trở nên tương tác và thân thiện hơn.</p>
+<p>Trong bài viết này, chúng ta sẽ tìm hiểu các cách quản lý sự kiện trong JavaScript.</p>
+<h2 id="1-sự-kiện-là-gì">
+  1. Sự Kiện là gì?
+  <a class="heading-link" href="#1-s%e1%bb%b1-ki%e1%bb%87n-l%c3%a0-g%c3%ac">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Một sự kiện là một hành động hoặc hành vi xảy ra trong trình duyệt, như nhấp chuột, di chuột, gõ bàn phím, v.v. JavaScript cung cấp một cơ chế để lắng nghe và xử lý các sự kiện này.</p>
+<p>Ví dụ về các sự kiện phổ biến:</p>
+<ul>
+<li><code>click</code>: Khi người dùng nhấp chuột vào một phần tử.</li>
+<li><code>mouseover</code>: Khi người dùng di chuột vào một phần tử.</li>
+<li><code>keydown</code>: Khi người dùng nhấn phím.</li>
+<li><code>submit</code>: Khi người dùng gửi một biểu mẫu.</li>
+</ul>
+<h2 id="2-các-cách-quản-lý-sự-kiện">
+  2. Các Cách Quản Lý Sự Kiện
+  <a class="heading-link" href="#2-c%c3%a1c-c%c3%a1ch-qu%e1%ba%a3n-l%c3%bd-s%e1%bb%b1-ki%e1%bb%87n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript cung cấp ba cách chính để gắn sự kiện vào các phần tử HTML: <strong>gắn sự kiện trực tiếp trong HTML</strong>, <strong>sử dụng thuộc tính DOM</strong>, và <strong>sử dụng <code>addEventListener</code></strong>.</p>
+<h3 id="21-gắn-sự-kiện-trực-tiếp-trong-html">
+  2.1. Gắn Sự Kiện Trực Tiếp trong HTML
+  <a class="heading-link" href="#21-g%e1%ba%afn-s%e1%bb%b1-ki%e1%bb%87n-tr%e1%bb%b1c-ti%e1%ba%bfp-trong-html">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Cách đơn giản nhất là sử dụng thuộc tính sự kiện trong HTML để gắn sự kiện cho phần tử.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;alert(&#39;Button clicked!&#39;)&#34;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">Trong ví dụ này, khi người dùng nhấp vào nút, hàm alert() sẽ được gọi và hiển thị thông báo.
+</span></span></code></pre></div><h2 id="22-sử-dụng-thuộc-tính-dom">
+  2.2. Sử Dụng Thuộc Tính DOM
+  <a class="heading-link" href="#22-s%e1%bb%ad-d%e1%bb%a5ng-thu%e1%bb%99c-t%c3%adnh-dom">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript cho phép bạn gán sự kiện cho một phần tử bằng cách truy cập phần tử đó qua DOM và sử dụng thuộc tính sự kiện.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Sao chép mã
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myButton&#34;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myButton&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Button clicked!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Ở đây, chúng ta đã sử dụng thuộc tính onclick của đối tượng button để gắn hàm xử lý sự kiện.</p>
+<h2 id="23-sử-dụng-addeventlistener">
+  2.3. Sử Dụng addEventListener
+  <a class="heading-link" href="#23-s%e1%bb%ad-d%e1%bb%a5ng-addeventlistener">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>addEventListener là cách gắn sự kiện linh hoạt và mạnh mẽ nhất. Nó cho phép chúng ta gắn nhiều sự kiện cho một phần tử mà không ghi đè lên nhau.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Sao chép mã
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myButton&#34;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myButton&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Button clicked!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Cách sử dụng addEventListener giúp bạn có thể thêm nhiều sự kiện vào một phần tử mà không bị thay thế, điều này rất hữu ích trong các ứng dụng phức tạp.</p>
+<h2 id="3-các-loại-sự-kiện">
+  3. Các Loại Sự Kiện
+  <a class="heading-link" href="#3-c%c3%a1c-lo%e1%ba%a1i-s%e1%bb%b1-ki%e1%bb%87n">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Dưới đây là một số sự kiện phổ biến mà bạn sẽ sử dụng trong JavaScript:</p>
+<p>3.1. Sự Kiện Nhấp Chuột (Click)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Sao chép mã
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;clickButton&#34;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;clickButton&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Button was clicked!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Sự kiện click được kích hoạt khi người dùng nhấp chuột vào phần tử.</p>
+<h2 id="32-sự-kiện-di-chuột-mouse-events">
+  3.2. Sự Kiện Di Chuột (Mouse Events)
+  <a class="heading-link" href="#32-s%e1%bb%b1-ki%e1%bb%87n-di-chu%e1%bb%99t-mouse-events">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>JavaScript cung cấp nhiều sự kiện di chuột, chẳng hạn như mouseover và mouseout.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Sao chép mã
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mouseArea&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: 200px; height: 200px; background-color: lightblue;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Di chuột vào đây
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;mouseArea&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;mouseArea&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;mouseout&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightblue&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Trong ví dụ này, sự kiện mouseover thay đổi màu nền khi chuột di vào, và sự kiện mouseout hoàn nguyên màu nền khi chuột ra khỏi phần tử.</p>
+<h2 id="33-sự-kiện-nhấn-phím-keyboard-events">
+  3.3. Sự Kiện Nhấn Phím (Keyboard Events)
+  <a class="heading-link" href="#33-s%e1%bb%b1-ki%e1%bb%87n-nh%e1%ba%a5n-ph%c3%adm-keyboard-events">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Sự kiện keydown và keyup được kích hoạt khi người dùng nhấn hoặc thả phím.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Sao chép mã
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;inputField&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Nhập văn bản&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;inputField&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keydown&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Key pressed: &#39;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">key</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Khi người dùng nhấn phím trên bàn phím, sự kiện keydown sẽ được kích hoạt và tên phím sẽ được in ra console.</p>
+<h2 id="4-ngừng-kích-hoạt-sự-kiện-event-propagation">
+  4. Ngừng Kích Hoạt Sự Kiện (Event Propagation)
+  <a class="heading-link" href="#4-ng%e1%bb%abng-k%c3%adch-ho%e1%ba%a1t-s%e1%bb%b1-ki%e1%bb%87n-event-propagation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Trong JavaScript, sự kiện có thể &ldquo;nổi bọt&rdquo; lên từ phần tử con đến phần tử cha (bubbling), hoặc &ldquo;chặn&rdquo; từ phần tử cha xuống phần tử con (capturing). Bạn có thể kiểm soát hành vi này bằng các phương thức stopPropagation và preventDefault.</p>
+<p>Ví dụ về Ngừng Kích Hoạt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">Sao chép mã
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;parent&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: 200px; height: 200px; background-color: lightyellow;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;child&#34;</span><span class="p">&gt;</span>Click Me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;parent&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Parent clicked!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Button clicked!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span> <span class="c1">// Ngừng sự kiện bubbling
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Trong ví dụ này, khi người dùng nhấp vào nút, sự kiện sẽ dừng lại ở nút mà không tiếp tục lan ra phần tử cha nhờ phương thức stopPropagation().</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Nguyễn Bá Cường 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

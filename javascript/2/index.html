@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Lập Trình Hướng Đối Tượng (OOP) trong JavaScript · Blog-Nguyễn Cường
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Nguyễn Bá Cường">
+<meta name="description" content="Khám phá lập trình hướng đối tượng (OOP) trong JavaScript, bao gồm các khái niệm như lớp (class), đối tượng (object), kế thừa, đóng gói, và đa hình.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lập Trình Hướng Đối Tượng (OOP) trong JavaScript">
+  <meta name="twitter:description" content="Khám phá lập trình hướng đối tượng (OOP) trong JavaScript, bao gồm các khái niệm như lớp (class), đối tượng (object), kế thừa, đóng gói, và đa hình.">
+
+<meta property="og:url" content="http://www.example.com/javascript/2/">
+  <meta property="og:site_name" content="Blog-Nguyễn Cường">
+  <meta property="og:title" content="Lập Trình Hướng Đối Tượng (OOP) trong JavaScript">
+  <meta property="og:description" content="Khám phá lập trình hướng đối tượng (OOP) trong JavaScript, bao gồm các khái niệm như lớp (class), đối tượng (object), kế thừa, đóng gói, và đa hình.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="javascript">
+    <meta property="article:published_time" content="2023-07-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-07-15T00:00:00+00:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Oop">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Web Development">
+    <meta property="article:tag" content="Object-Oriented">
+      <meta property="og:see_also" content="http://www.example.com/javascript/5/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/4/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/3/">
+      <meta property="og:see_also" content="http://www.example.com/javascript/1/">
+
+
+
+
+<link rel="canonical" href="http://www.example.com/javascript/2/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.ed30115a76cdaa62f2229e973d5b1c89b2d3dd4b1d9c07a729baad06aa3b0cbe.css" integrity="sha256-7TARWnbNqmLyIp6XPVscibLT3UsdnAenKbqtBqo7DL4=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://www.example.com/">
+      Blog-Nguyễn Cường
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/java/">Java</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/javascript/">Java Script</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/javascript/2/">
+          Lập Trình Hướng Đối Tượng (OOP) trong JavaScript
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="lập-trình-hướng-đối-tượng-oop-trong-javascript">
+  Lập Trình Hướng Đối Tượng (OOP) trong JavaScript
+  <a class="heading-link" href="#l%e1%ba%adp-tr%c3%acnh-h%c6%b0%e1%bb%9bng-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-oop-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Lập trình hướng đối tượng (OOP) là một phương pháp lập trình phổ biến giúp tổ chức mã nguồn hiệu quả hơn thông qua việc sử dụng các đối tượng. JavaScript hỗ trợ OOP và cung cấp các khái niệm như lớp (class), đối tượng (object), kế thừa (inheritance), đóng gói (encapsulation) và đa hình (polymorphism). Trong bài viết này, chúng ta sẽ khám phá các khái niệm này và cách sử dụng chúng trong JavaScript.</p>
+<h2 id="1-đối-tượng-object">
+  1. Đối Tượng (Object)
+  <a class="heading-link" href="#1-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-object">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Đối tượng trong JavaScript là một tập hợp các thuộc tính và phương thức. Mỗi thuộc tính có một tên và giá trị, và mỗi phương thức là một hàm được lưu trữ trong đối tượng.</p>
+<h3 id="tạo-đối-tượng">
+  Tạo Đối Tượng:
+  <a class="heading-link" href="#t%e1%ba%a1o-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;John&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">age</span><span class="o">:</span> <span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">greet</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>person.greet(); // In ra &ldquo;Hello, John&rdquo;
+Trong ví dụ trên, person là một đối tượng có ba thuộc tính (name, age, greet). Phương thức greet là một hàm được sử dụng để in ra lời chào.</p>
+<h2 id="2-lớp-class-trong-javascript">
+  2. Lớp (Class) trong JavaScript
+  <a class="heading-link" href="#2-l%e1%bb%9bp-class-trong-javascript">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Lớp là một bản thiết kế (template) cho việc tạo ra các đối tượng. Nó mô tả các thuộc tính và phương thức mà các đối tượng của lớp đó sẽ có. JavaScript hỗ trợ cú pháp class kể từ ES6.</p>
+<p>Tạo Lớp:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">person1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">person2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&#34;Jane&#34;</span><span class="p">,</span> <span class="mi">25</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">person1</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span> <span class="c1">// In ra &#34;Hello, John&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">person2</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span> <span class="c1">// In ra &#34;Hello, Jane&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">Lớp</span> <span class="nx">Person</span> <span class="nx">có</span> <span class="nx">một</span> <span class="nx">phương</span> <span class="nx">thức</span> <span class="nx">greet</span> <span class="nx">và</span> <span class="nx">một</span> <span class="nx">hàm</span> <span class="nx">khởi</span> <span class="nx">tạo</span> <span class="nx">constructor</span> <span class="nx">để</span> <span class="nx">thiết</span> <span class="nx">lập</span> <span class="nx">các</span> <span class="nx">thuộc</span> <span class="nx">tính</span> <span class="nx">name</span> <span class="nx">và</span> <span class="nx">age</span><span class="p">.</span>
+</span></span></code></pre></div><h2 id="3-kế-thừa-inheritance">
+  3. Kế Thừa (Inheritance)
+  <a class="heading-link" href="#3-k%e1%ba%bf-th%e1%bb%aba-inheritance">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Kế thừa là một cơ chế trong OOP cho phép một lớp (lớp con) kế thừa các thuộc tính và phương thức của một lớp khác (lớp cha). JavaScript sử dụng từ khóa extends để thực hiện kế thừa.</p>
+<p>Ví dụ về Kế Thừa:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">speak</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">&#34; makes a sound&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Dog</span> <span class="kr">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">speak</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">&#34; barks&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dog</span><span class="p">(</span><span class="s2">&#34;Buddy&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">dog</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">// In ra &#34;Buddy barks&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">Trong</span> <span class="nx">ví</span> <span class="nx">dụ</span> <span class="nx">trên</span><span class="p">,</span> <span class="nx">lớp</span> <span class="nx">Dog</span> <span class="nx">kế</span> <span class="nx">thừa</span> <span class="nx">từ</span> <span class="nx">lớp</span> <span class="nx">Animal</span> <span class="nx">và</span> <span class="nx">ghi</span> <span class="nx">đè</span> <span class="nx">phương</span> <span class="nx">thức</span> <span class="nx">speak</span><span class="p">.</span>
+</span></span></code></pre></div><h2 id="4-đóng-gói-encapsulation">
+  4. Đóng Gói (Encapsulation)
+  <a class="heading-link" href="#4-%c4%91%c3%b3ng-g%c3%b3i-encapsulation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Đóng gói là cơ chế ẩn các chi tiết triển khai của một đối tượng, chỉ cung cấp các phương thức cần thiết để tương tác với đối tượng đó. Trong JavaScript, chúng ta có thể sử dụng các thuộc tính và phương thức riêng (private) để đóng gói dữ liệu.</p>
+<p>Ví dụ về Đóng Gói:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="err">#</span><span class="nx">name</span><span class="p">;</span> <span class="c1">// Thuộc tính private
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="err">#</span><span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">getName</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">setName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">person</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">getName</span><span class="p">());</span> <span class="c1">// In ra &#34;John&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">person</span><span class="p">.</span><span class="nx">setName</span><span class="p">(</span><span class="s2">&#34;Mike&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">getName</span><span class="p">());</span> <span class="c1">// In ra &#34;Mike&#34;
+</span></span></span></code></pre></div><p>Ở đây, thuộc tính #name và #age là private và không thể truy cập trực tiếp từ bên ngoài lớp. Chúng ta sử dụng các phương thức getter và setter để thao tác với chúng.</p>
+<h2 id="5-đa-hình-polymorphism">
+  5. Đa Hình (Polymorphism)
+  <a class="heading-link" href="#5-%c4%91a-h%c3%acnh-polymorphism">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Đa hình cho phép các đối tượng thuộc các lớp khác nhau có thể có các hành vi khác nhau với cùng một phương thức. JavaScript hỗ trợ đa hình thông qua kế thừa và ghi đè phương thức.</p>
+<p>Ví dụ về Đa Hình:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">Sao</span> <span class="nx">chép</span> <span class="nx">mã</span>
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">speak</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Animal makes a sound&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Dog</span> <span class="kr">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">speak</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Dog barks&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Cat</span> <span class="kr">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">speak</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Cat meows&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dog</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Cat</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">dog</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">// In ra &#34;Dog barks&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">cat</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">// In ra &#34;Cat meows&#34;
+</span></span></span></code></pre></div><p>Trong ví dụ trên, mặc dù cả Dog và Cat đều kế thừa từ Animal, nhưng mỗi lớp có cách triển khai riêng cho phương thức speak.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Nguyễn Bá Cường 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
