@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Event Handling on Blog-Nguyễn Cường</title>
-    <link>http://www.example.com/tags/event-handling/</link>
+    <link>https://cuongsieutrum.github.io/tags/event-handling/</link>
     <description>Recent content in Event Handling on Blog-Nguyễn Cường</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/tags/event-handling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cuongsieutrum.github.io/tags/event-handling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quản Lý Sự Kiện (Event Handling) trong JavaScript</title>
-      <link>http://www.example.com/javascript/3/</link>
+      <link>https://cuongsieutrum.github.io/javascript/3/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/javascript/3/</guid>
+      <guid>https://cuongsieutrum.github.io/javascript/3/</guid>
       <description>&lt;h1 id=&#34;quản-lý-sự-kiện-event-handling-trong-javascript&#34;&gt;&#xD;&#xA;  Quản Lý Sự Kiện (Event Handling) trong JavaScript&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#qu%e1%ba%a3n-l%c3%bd-s%e1%bb%b1-ki%e1%bb%87n-event-handling-trong-javascript&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Quản lý sự kiện (Event Handling) trong JavaScript cho phép chúng ta xử lý các hành động của người dùng, như nhấp chuột, di chuột, nhập văn bản, v.v., và phản hồi lại những hành động này. Việc sử dụng các sự kiện là một phần không thể thiếu trong phát triển web, giúp làm cho ứng dụng trở nên tương tác và thân thiện hơn.&lt;/p&gt;</description>
     </item>
   </channel>

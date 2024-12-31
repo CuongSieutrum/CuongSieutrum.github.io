@@ -2,199 +2,199 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blog-Nguyễn Cường</title>
-    <link>http://www.example.com/tags/</link>
+    <link>https://cuongsieutrum.github.io/tags/</link>
     <description>Recent content in Tags on Blog-Nguyễn Cường</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cuongsieutrum.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Async Await</title>
-      <link>http://www.example.com/tags/async-await/</link>
+      <link>https://cuongsieutrum.github.io/tags/async-await/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/async-await/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/async-await/</guid>
       <description></description>
     </item>
     <item>
       <title>Asynchronous Programming</title>
-      <link>http://www.example.com/tags/asynchronous-programming/</link>
+      <link>https://cuongsieutrum.github.io/tags/asynchronous-programming/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/asynchronous-programming/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/asynchronous-programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Document Object Model</title>
-      <link>http://www.example.com/tags/document-object-model/</link>
+      <link>https://cuongsieutrum.github.io/tags/document-object-model/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/document-object-model/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/document-object-model/</guid>
       <description></description>
     </item>
     <item>
       <title>DOM</title>
-      <link>http://www.example.com/tags/dom/</link>
+      <link>https://cuongsieutrum.github.io/tags/dom/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/dom/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/dom/</guid>
       <description></description>
     </item>
     <item>
       <title>Front-End Development</title>
-      <link>http://www.example.com/tags/front-end-development/</link>
+      <link>https://cuongsieutrum.github.io/tags/front-end-development/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/front-end-development/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/front-end-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
-      <link>http://www.example.com/tags/javascript/</link>
+      <link>https://cuongsieutrum.github.io/tags/javascript/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/javascript/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Promises</title>
-      <link>http://www.example.com/tags/promises/</link>
+      <link>https://cuongsieutrum.github.io/tags/promises/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/promises/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/promises/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>http://www.example.com/tags/web-development/</link>
+      <link>https://cuongsieutrum.github.io/tags/web-development/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/web-development/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/web-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Event Handling</title>
-      <link>http://www.example.com/tags/event-handling/</link>
+      <link>https://cuongsieutrum.github.io/tags/event-handling/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/event-handling/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/event-handling/</guid>
       <description></description>
     </item>
     <item>
       <title>Object-Oriented</title>
-      <link>http://www.example.com/tags/object-oriented/</link>
+      <link>https://cuongsieutrum.github.io/tags/object-oriented/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/object-oriented/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/object-oriented/</guid>
       <description></description>
     </item>
     <item>
       <title>Oop</title>
-      <link>http://www.example.com/tags/oop/</link>
+      <link>https://cuongsieutrum.github.io/tags/oop/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/oop/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/oop/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://www.example.com/tags/programming/</link>
+      <link>https://cuongsieutrum.github.io/tags/programming/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/programming/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Css</title>
-      <link>http://www.example.com/tags/css/</link>
+      <link>https://cuongsieutrum.github.io/tags/css/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/css/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/css/</guid>
       <description></description>
     </item>
     <item>
       <title>Html</title>
-      <link>http://www.example.com/tags/html/</link>
+      <link>https://cuongsieutrum.github.io/tags/html/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/html/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/html/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://www.example.com/tags/hugo/</link>
+      <link>https://cuongsieutrum.github.io/tags/hugo/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/hugo/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>http://www.example.com/tags/markdown/</link>
+      <link>https://cuongsieutrum.github.io/tags/markdown/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/markdown/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Shortcodes</title>
-      <link>http://www.example.com/tags/shortcodes/</link>
+      <link>https://cuongsieutrum.github.io/tags/shortcodes/</link>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/shortcodes/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/shortcodes/</guid>
       <description></description>
     </item>
     <item>
       <title>Basics</title>
-      <link>http://www.example.com/tags/basics/</link>
+      <link>https://cuongsieutrum.github.io/tags/basics/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/basics/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/basics/</guid>
       <description></description>
     </item>
     <item>
       <title>Beginner</title>
-      <link>http://www.example.com/tags/beginner/</link>
+      <link>https://cuongsieutrum.github.io/tags/beginner/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/beginner/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/beginner/</guid>
       <description></description>
     </item>
     <item>
       <title>Coding</title>
-      <link>http://www.example.com/tags/coding/</link>
+      <link>https://cuongsieutrum.github.io/tags/coding/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/coding/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/coding/</guid>
       <description></description>
     </item>
     <item>
       <title>Collections</title>
-      <link>http://www.example.com/tags/collections/</link>
+      <link>https://cuongsieutrum.github.io/tags/collections/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/collections/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/collections/</guid>
       <description></description>
     </item>
     <item>
       <title>Framework</title>
-      <link>http://www.example.com/tags/framework/</link>
+      <link>https://cuongsieutrum.github.io/tags/framework/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/framework/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/framework/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://www.example.com/tags/java/</link>
+      <link>https://cuongsieutrum.github.io/tags/java/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/java/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Syntax</title>
-      <link>http://www.example.com/tags/syntax/</link>
+      <link>https://cuongsieutrum.github.io/tags/syntax/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/syntax/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/syntax/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorials</title>
-      <link>http://www.example.com/tags/tutorials/</link>
+      <link>https://cuongsieutrum.github.io/tags/tutorials/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/tutorials/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/tutorials/</guid>
       <description></description>
     </item>
     <item>
       <title>Emoji</title>
-      <link>http://www.example.com/tags/emoji/</link>
+      <link>https://cuongsieutrum.github.io/tags/emoji/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/emoji/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/emoji/</guid>
       <description></description>
     </item>
     <item>
       <title>Text</title>
-      <link>http://www.example.com/tags/text/</link>
+      <link>https://cuongsieutrum.github.io/tags/text/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/tags/text/</guid>
+      <guid>https://cuongsieutrum.github.io/tags/text/</guid>
       <description></description>
     </item>
   </channel>

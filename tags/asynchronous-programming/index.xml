@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asynchronous Programming on Blog-Nguyễn Cường</title>
-    <link>http://www.example.com/tags/asynchronous-programming/</link>
+    <link>https://cuongsieutrum.github.io/tags/asynchronous-programming/</link>
     <description>Recent content in Asynchronous Programming on Blog-Nguyễn Cường</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/tags/asynchronous-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cuongsieutrum.github.io/tags/asynchronous-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await</title>
-      <link>http://www.example.com/javascript/4/</link>
+      <link>https://cuongsieutrum.github.io/javascript/4/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/javascript/4/</guid>
+      <guid>https://cuongsieutrum.github.io/javascript/4/</guid>
       <description>&lt;h1 id=&#34;lập-trình-bất-đồng-bộ-asynchronous-programming-trong-javascript-promises-và-asyncawait&#34;&gt;&#xD;&#xA;  Lập Trình Bất Đồng Bộ (Asynchronous Programming) trong JavaScript: Promises và async/await&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#l%e1%ba%adp-tr%c3%acnh-b%e1%ba%a5t-%c4%91%e1%bb%93ng-b%e1%bb%99-asynchronous-programming-trong-javascript-promises-v%c3%a0-asyncawait&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Trong phát triển web hiện đại, việc xử lý các tác vụ bất đồng bộ là rất quan trọng, đặc biệt khi làm việc với các API, truy vấn cơ sở dữ liệu, hoặc các tác vụ yêu cầu thời gian như tải dữ liệu từ máy chủ. JavaScript cung cấp các công cụ mạnh mẽ để làm việc với các tác vụ bất đồng bộ, trong đó Promises và async/await là hai công cụ phổ biến nhất.&lt;/p&gt;</description>
     </item>
   </channel>

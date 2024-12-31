@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Front-End Development on Blog-Nguyễn Cường</title>
-    <link>http://www.example.com/tags/front-end-development/</link>
+    <link>https://cuongsieutrum.github.io/tags/front-end-development/</link>
     <description>Recent content in Front-End Development on Blog-Nguyễn Cường</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/tags/front-end-development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cuongsieutrum.github.io/tags/front-end-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript DOM (Document Object Model)</title>
-      <link>http://www.example.com/javascript/5/</link>
+      <link>https://cuongsieutrum.github.io/javascript/5/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/javascript/5/</guid>
+      <guid>https://cuongsieutrum.github.io/javascript/5/</guid>
       <description>&lt;h1 id=&#34;javascript-dom-document-object-model&#34;&gt;&#xD;&#xA;  JavaScript DOM (Document Object Model)&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#javascript-dom-document-object-model&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;DOM (Document Object Model)&lt;/strong&gt; là một khái niệm quan trọng trong phát triển web. Nó cung cấp một cách để JavaScript có thể truy cập và thay đổi nội dung, cấu trúc và kiểu dáng của các tài liệu HTML hoặc XML. Khi bạn làm việc với các trang web, bạn sẽ thường xuyên cần sử dụng DOM để thay đổi các phần tử trên trang mà không cần phải tải lại toàn bộ trang.&lt;/p&gt;</description>
     </item>
   </channel>

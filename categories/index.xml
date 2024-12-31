@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Blog-Nguyễn Cường</title>
-    <link>http://www.example.com/categories/</link>
+    <link>https://cuongsieutrum.github.io/categories/</link>
     <description>Recent content in Categories on Blog-Nguyễn Cường</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cuongsieutrum.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Học Lập Trình</title>
-      <link>http://www.example.com/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <link>https://cuongsieutrum.github.io/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript Cơ Bản</title>
-      <link>http://www.example.com/categories/javascript-c%C6%A1-b%E1%BA%A3n/</link>
+      <link>https://cuongsieutrum.github.io/categories/javascript-c%C6%A1-b%E1%BA%A3n/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/javascript-c%C6%A1-b%E1%BA%A3n/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/javascript-c%C6%A1-b%E1%BA%A3n/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript Nâng Cao</title>
-      <link>http://www.example.com/categories/javascript-n%C3%A2ng-cao/</link>
+      <link>https://cuongsieutrum.github.io/categories/javascript-n%C3%A2ng-cao/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/javascript-n%C3%A2ng-cao/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/javascript-n%C3%A2ng-cao/</guid>
       <description></description>
     </item>
     <item>
       <title>Demonstração Do Tema</title>
-      <link>http://www.example.com/categories/demonstra%C3%A7%C3%A3o-do-tema/</link>
+      <link>https://cuongsieutrum.github.io/categories/demonstra%C3%A7%C3%A3o-do-tema/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/demonstra%C3%A7%C3%A3o-do-tema/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/demonstra%C3%A7%C3%A3o-do-tema/</guid>
       <description></description>
     </item>
     <item>
       <title>Sintaxe</title>
-      <link>http://www.example.com/categories/sintaxe/</link>
+      <link>https://cuongsieutrum.github.io/categories/sintaxe/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/sintaxe/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/sintaxe/</guid>
       <description></description>
     </item>
     <item>
       <title>Syntax</title>
-      <link>http://www.example.com/categories/syntax/</link>
+      <link>https://cuongsieutrum.github.io/categories/syntax/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/syntax/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/syntax/</guid>
       <description></description>
     </item>
     <item>
       <title>Theme Demo</title>
-      <link>http://www.example.com/categories/theme-demo/</link>
+      <link>https://cuongsieutrum.github.io/categories/theme-demo/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/theme-demo/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/theme-demo/</guid>
       <description></description>
     </item>
     <item>
       <title>Java Cơ Bản</title>
-      <link>http://www.example.com/categories/java-c%C6%A1-b%E1%BA%A3n/</link>
+      <link>https://cuongsieutrum.github.io/categories/java-c%C6%A1-b%E1%BA%A3n/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/java-c%C6%A1-b%E1%BA%A3n/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/java-c%C6%A1-b%E1%BA%A3n/</guid>
       <description></description>
     </item>
     <item>
       <title>Java Nâng Cao</title>
-      <link>http://www.example.com/categories/java-n%C3%A2ng-cao/</link>
+      <link>https://cuongsieutrum.github.io/categories/java-n%C3%A2ng-cao/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/java-n%C3%A2ng-cao/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/java-n%C3%A2ng-cao/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>http://www.example.com/categories/web-development/</link>
+      <link>https://cuongsieutrum.github.io/categories/web-development/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/categories/web-development/</guid>
+      <guid>https://cuongsieutrum.github.io/categories/web-development/</guid>
       <description></description>
     </item>
   </channel>
